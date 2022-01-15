@@ -16,6 +16,10 @@
     <link href="<?= base_url() ?>assets/plugins/switchery/switchery.min.css" rel="stylesheet">
     <!-- Apex css -->
     <link href="<?= base_url() ?>assets/plugins/apexcharts/apexcharts.css" rel="stylesheet">
+    <!-- DATATABLE -->
+    <link href="<?= base_url() ?>assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url() ?>assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url() ?>assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <!-- Slick css -->
     <link href="<?= base_url() ?>assets/plugins/slick/slick.css" rel="stylesheet">
     <link href="<?= base_url() ?>assets/plugins/slick/slick-theme.css" rel="stylesheet">

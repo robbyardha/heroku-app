@@ -2,8 +2,8 @@
     <div class="sidebar">
         <!-- Start Logobar -->
         <div class="logobar">
-            <a href="index.html" class="logo logo-large"><img src="assets/images/logo.svg" class="img-fluid" alt="logo"></a>
-            <a href="index.html" class="logo logo-small"><img src="assets/images/small_logo.svg" class="img-fluid" alt="logo"></a>
+            <a href="index.html" class="logo logo-large"><img src="<?= base_url() ?>assets/images/logo.svg" class="img-fluid" alt="logo"></a>
+            <a href="index.html" class="logo logo-small"><img src="<?= base_url() ?>assets/images/small_logo.svg" class="img-fluid" alt="logo"></a>
         </div>
         <!-- End Logobar -->
         <!-- Start Navigationbar -->
@@ -11,7 +11,7 @@
             <ul class="vertical-menu">
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="index.html">CRM</a></li>
@@ -23,7 +23,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>Basic UI</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>Basic UI</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="basic-ui-kits-alerts.html">Alerts</a></li>
@@ -50,7 +50,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/advanced.svg" class="img-fluid" alt="advanced"><span>Advanced UI</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/advanced.svg" class="img-fluid" alt="advanced"><span>Advanced UI</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="advanced-ui-kits-image-crop.html">Image Crop</a></li>
@@ -69,7 +69,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/apps.svg" class="img-fluid" alt="apps"><span>Apps</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/apps.svg" class="img-fluid" alt="apps"><span>Apps</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="apps-calender.html">Calender</a></li>
@@ -88,7 +88,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/form_elements.svg" class="img-fluid" alt="form_elements"><span>Forms</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/form_elements.svg" class="img-fluid" alt="form_elements"><span>Forms</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="form-inputs.html">Basic Elements</a></li>
@@ -109,7 +109,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/chart.svg" class="img-fluid" alt="chart"><span>Charts</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/chart.svg" class="img-fluid" alt="chart"><span>Charts</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="chart-apex.html">Apex</a></li>
@@ -125,7 +125,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/icons.svg" class="img-fluid" alt="icons"><span>Icons</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/icons.svg" class="img-fluid" alt="icons"><span>Icons</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="icon-svg.html">SVG</a></li>
@@ -145,7 +145,7 @@
 
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/tables.svg" class="img-fluid" alt="tables"><span>Tables</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/tables.svg" class="img-fluid" alt="tables"><span>Tables</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="table-bootstrap.html">Bootstrap</a></li>
@@ -157,7 +157,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/maps.svg" class="img-fluid" alt="maps"><span>Maps</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/maps.svg" class="img-fluid" alt="maps"><span>Maps</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="map-google.html">Google</a></li>
@@ -166,12 +166,12 @@
                 </li>
                 <li>
                     <a href="widgets.html">
-                        <img src="assets/images/svg-icon/widgets.svg" class="img-fluid" alt="widgets"><span>Widgets</span><span class="badge badge-success pull-right">New</span>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/widgets.svg" class="img-fluid" alt="widgets"><span>Widgets</span><span class="badge badge-success pull-right">New</span>
                     </a>
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/pages.svg" class="img-fluid" alt="pages"><span>Pages</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/pages.svg" class="img-fluid" alt="pages"><span>Pages</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li>
@@ -203,7 +203,7 @@
                 </li>
                 <li>
                     <a href="javaScript:void();">
-                        <img src="assets/images/svg-icon/ecommerce.svg" class="img-fluid" alt="ecommerce"><span>eCommerce</span><i class="feather icon-chevron-right pull-right"></i>
+                        <img src="<?= base_url() ?>assets/images/svg-icon/ecommerce.svg" class="img-fluid" alt="ecommerce"><span>eCommerce</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
                     <ul class="vertical-submenu">
                         <li><a href="ecommerce-product-list.html">Product List</a></li>
