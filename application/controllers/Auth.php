@@ -91,7 +91,7 @@ class Auth extends CI_Controller
             'Terms',
             'required',
             [
-                'required' => 'Password Confirmation is required!',
+                'required' => 'Terms is required!',
             ]
         );
 
