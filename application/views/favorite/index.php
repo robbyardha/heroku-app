@@ -52,8 +52,8 @@ EXAMPLE DATA
             <div class="breadcrumb-list">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <!-- <li class="breadcrumb-item"><a href="#"></a></li> -->
-                    <li class="breadcrumb-item active" aria-current="page">Heroku</li>
+                    <li class="breadcrumb-item"><a href="<?= base_url('heroku') ?>">Heroku</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Hero Favorite</li>
                 </ol>
             </div>
         </div>
@@ -97,15 +97,15 @@ EXAMPLE DATA
                                 $numbs = 0;
                                 $no = 1;
                                 ?>
-                                <?php foreach ($fav as $r) : ?>
+                                <?php foreach ($fav as $f) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $r['nama'] ?></td>
-                                        <td><?= $r['kategori'] ?></td>
-                                        <td><?= $r['asal'] ?></td>
-                                        <td><?= $r['usia'] ?></td>
+                                        <td><?= $f['nama'] ?></td>
+                                        <td><?= $f['kategori'] ?></td>
+                                        <td><?= $f['asal'] ?></td>
+                                        <td><?= $f['usia'] ?></td>
                                         <td>
-                                            <a href="<?= base_url('heroku/detail/') . $numbs++ ?>" class="btn btn-success-rgba">Detail</a>
+                                            <a href="<?= base_url('heroku/detail/') . $f['hero_id'] ?>" class="btn btn-success-rgba">Detail</a>
                                         </td>
 
                                     </tr>
