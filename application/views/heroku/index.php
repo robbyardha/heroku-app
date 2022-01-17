@@ -12,6 +12,8 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 $resp = curl_exec($curl);
 curl_close($curl);
 $result = json_decode($resp, true);
+
+
 // var_dump($result);
 // die
 
@@ -97,19 +99,27 @@ EXAMPLE DATA
                                 $numbs = 0;
                                 $no = 1;
                                 ?>
-                                <?php foreach ($result as $r) : ?>
-                                    <tr>
-                                        <td><?= $no++ ?></td>
-                                        <td><?= $r['nama'] ?></td>
-                                        <td><?= $r['kategori'] ?></td>
-                                        <td><?= $r['asal'] ?></td>
-                                        <td><?= $r['usia'] ?></td>
-                                        <td>
-                                            <a href="<?= base_url('heroku/detail/') . $numbs++ ?>" class="btn btn-success-rgba">Detail</a>
-                                        </td>
+                                <?php if (@fopen($url, 'url')) : ?>
 
-                                    </tr>
-                                <?php endforeach ?>
+                                    <?php foreach ($result as $r) : ?>
+                                        <tr>
+                                            <td><?= $no++ ?></td>
+                                            <td><?= $r['nama'] ?></td>
+                                            <td><?= $r['kategori'] ?></td>
+                                            <td><?= $r['asal'] ?></td>
+                                            <td><?= $r['usia'] ?></td>
+                                            <td>
+                                                <a href="<?= base_url('heroku/detail/') . $numbs++ ?>" class="btn btn-success-rgba">Detail</a>
+                                            </td>
+
+                                        </tr>
+                                    <?php endforeach ?>
+                                <?php else : ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong>Sorry you're Offline. Please Turn On Your Internet!</strong>
+                                        <h5>Data Hero can't be show</h5>
+                                    </div>
+                                <?php endif ?>
 
                             </tbody>
                             <tfoot>

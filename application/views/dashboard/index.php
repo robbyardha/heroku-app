@@ -71,8 +71,15 @@ $result = json_decode($resp, true);
                             <div class="row align-items-center">
                                 <div class="col-lg-3">
                                     <div class="revenue-box border-bottom mb-2">
-                                        <h4><?= count($result) ?></h4>
-                                        <p>Total Hero</p>
+                                        <?php if (@fopen($url, 'url')) : ?>
+                                            <h4><?= count($result) ?></h4>
+                                            <p>Total Hero</p>
+                                        <?php else : ?>
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>Sorry you're Offline. Please Turn On Your Internet!</strong>
+                                                <h5>Data Hero can't be show</h5>
+                                            </div>
+                                        <?php endif ?>
                                     </div>
                                     <div class="revenue-box">
                                         <h4><?= count($fav) ?></h4>

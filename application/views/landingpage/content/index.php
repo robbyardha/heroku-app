@@ -12,7 +12,7 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 $resp = curl_exec($curl);
 curl_close($curl);
 $result = json_decode($resp, true);
-$countdata = count($result);
+
 // var_dump(count($result));
 // die
 
@@ -25,8 +25,20 @@ $countdata = count($result);
 // var_dump($dotask);
 // die;
 
-
+// if (@fopen($url, 'url')) {
+//     $countdata = count($result);
+// } else {
+//     echo ("Connection Lost");
+// }
 ?>
+<?php if (@fopen($url, 'url')) : ?>
+    <?php $countdata = count($result); ?>
+<?php else : ?>
+    <div class="alert alert-danger" role="alert">
+        <strong>Sorry you're Offline. Please Turn On Your Internet!</strong>
+        <h5>Data Hero can't be show</h5>
+    </div>
+<?php endif ?>
 <div class="contentbar">
     <!-- Start row -->
     <section id="heroku">
@@ -83,11 +95,21 @@ $countdata = count($result);
 
                 </div>
                 <div class="col-lg-6 col-sm-12 col-md-12 align-self-center">
-                    <h1 class="text-left herokuapp-fontreg">Kenangan Pahlawan</h1>
-                    <h1 class="herokuapp-fontbold align-self-left text-left"><?= $countdata ?> Pahlawan</h1>
-                    <p class="text-justify mt-2">
-                        Terdapat <?= $countdata ?> pahlawan yang dapat kita explore untuk menguatkan memory kita.
-                    </p>
+                    <?php if (@fopen($url, 'url')) : ?>
+                        <?php $countdata = count($result); ?>
+                        <h1 class="text-left herokuapp-fontreg">Kenangan Pahlawan</h1>
+                        <h1 class="herokuapp-fontbold align-self-left text-left"><?= $countdata ?> Pahlawan</h1>
+                        <p class="text-justify mt-2">
+                            Terdapat <?= $countdata ?> pahlawan yang dapat kita explore untuk menguatkan memory kita.
+                        </p>
+                    <?php else : ?>
+                        <h1 class="text-left herokuapp-fontreg">Kenangan Pahlawan</h1>
+                        <h1 class="herokuapp-fontbold align-self-left text-left">NULL DATA Pahlawan</h1>
+                        <p class="text-justify mt-2">
+                            Terdapat NULL DATA pahlawan yang dapat kita explore untuk menguatkan memory kita.
+                        </p>
+
+                    <?php endif ?>
 
                 </div>
             </div>
