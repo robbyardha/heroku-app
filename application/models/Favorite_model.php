@@ -2,6 +2,8 @@
 
 class Favorite_model extends CI_Model
 {
+
+
     public function addfav()
     {
         $data = [
@@ -67,5 +69,11 @@ class Favorite_model extends CI_Model
         $this->db->update('favorite', $data);
 
         // $this->db->where('users_id', $id)
+    }
+
+    public function getFavhero()
+    {
+        $usersid =  $this->session->userdata('username_id');
+        return $this->db->get_where('favorite', ['users_id' => $usersid])->result_array();
     }
 }
