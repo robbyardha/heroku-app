@@ -2,14 +2,34 @@
     <div class="sidebar">
         <!-- Start Logobar -->
         <div class="logobar">
-            <a href="index.html" class="logo logo-large"><img src="<?= base_url() ?>assets/images/logo.svg" class="img-fluid" alt="logo"></a>
-            <a href="index.html" class="logo logo-small"><img src="<?= base_url() ?>assets/images/small_logo.svg" class="img-fluid" alt="logo"></a>
+            <a href="" class="logo logo-large"><img src="<?= base_url() ?>assets/images/logofav.png" class="img-fluid" alt="logo"></a>
+            <a href="" class="logo logo-small"><img src="<?= base_url() ?>assets/images/herologo.png" class="img-fluid" alt="logo"></a>
         </div>
         <!-- End Logobar -->
         <!-- Start Navigationbar -->
         <div class="navigationbar">
             <ul class="vertical-menu">
                 <li>
+                    <a href="javaScript:void();">
+                        <img src="<?= base_url() ?>assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span><i class="feather icon-chevron-right pull-right"></i>
+                    </a>
+                    <ul class="vertical-submenu">
+                        <li><a href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="javaScript:void();">
+                        <img src="<?= base_url() ?>assets/images/svg-icon/icons.svg" class="img-fluid" alt="icons"><span>Hero</span><i class="feather icon-chevron-right pull-right"></i>
+                    </a>
+                    <ul class="vertical-submenu">
+                        <li><a href="<?= base_url('heroku') ?>">Heroku</a></li>
+                        <li><a href="<?= base_url('favorite') ?>">Favorite</a></li>
+
+                    </ul>
+                </li>
+                <!-- <li>
                     <a href="javaScript:void();">
                         <img src="<?= base_url() ?>assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span><i class="feather icon-chevron-right pull-right"></i>
                     </a>
@@ -217,7 +237,7 @@
                         <li><a href="ecommerce-thankyou.html">Thank You</a></li>
                         <li><a href="ecommerce-myaccount.html">My Account</a></li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </div>
         <!-- End Navigationbar -->

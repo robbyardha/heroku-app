@@ -14,6 +14,11 @@ curl_close($curl);
 $result = json_decode($resp, true);
 // var_dump($result);
 // die
+
+// $url = file_get_contents(base_url('assets/content/hero.json'));
+// var_dump($url);
+// die;
+
 // var_dump($resp);
 // die;
 // var_dump($dotask);
@@ -43,18 +48,18 @@ EXAMPLE DATA
 <div class="breadcrumbbar">
     <div class="row align-items-center">
         <div class="col-md-8 col-lg-8">
-            <h4 class="page-title">CRM</h4>
+            <h4 class="page-title">Heroku-App</h4>
             <div class="breadcrumb-list">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">CRM</li>
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <!-- <li class="breadcrumb-item"><a href="#"></a></li> -->
+                    <li class="breadcrumb-item active" aria-current="page">Heroku</li>
                 </ol>
             </div>
         </div>
         <div class="col-md-4 col-lg-4">
             <div class="widgetbar">
-                <button class="btn btn-primary-rgba"><i class="feather icon-plus mr-2"></i>Actions</button>
+                <!-- <button class="btn btn-primary-rgba"><i class="feather icon-plus mr-2"></i>Actions</button> -->
             </div>
         </div>
     </div>
@@ -62,6 +67,9 @@ EXAMPLE DATA
 <!-- End Breadcrumbbar -->
 <!-- Start Contentbar -->
 <div class="contentbar">
+    <?php if ($this->session->flashdata('heroku')) : ?>
+        <div class="alert alert-success" role="alert">Data has been <strong><?= $this->session->flashdata('heroku') ?></strong> to Favorite</div>
+    <?php endif ?>
     <!-- Start row -->
     <div class="row">
         <!-- Start col -->
