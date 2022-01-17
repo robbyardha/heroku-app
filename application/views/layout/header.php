@@ -23,6 +23,7 @@
     <!-- Slick css -->
     <link href="<?= base_url() ?>assets/plugins/slick/slick.css" rel="stylesheet">
     <link href="<?= base_url() ?>assets/plugins/slick/slick-theme.css" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/plugins/vertical-timeline/vertical-timeline.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url() ?>assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url() ?>assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">

@@ -14,7 +14,8 @@
 <!-- Switchery js -->
 <script src="<?= base_url() ?>assets/plugins/switchery/switchery.min.js"></script>
 <!-- Apex js -->
-
+<!-- TIMELINE -->
+<script src="<?= base_url() ?>assets/plugins/vertical-timeline/vertical-timeline.js"></script>
 <!-- DATATABLE -->
 <!-- Datatable js -->
 <script src="<?= base_url() ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
